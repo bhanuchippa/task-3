@@ -1,0 +1,9 @@
+tensorflow
+flask
+numpy
+pandas
+opencv-python-headless
+matplotlib
+seaborn
+scikit-learn
+Pillow

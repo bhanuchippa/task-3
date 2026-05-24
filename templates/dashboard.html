@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Image Classifier Model Performance Dashboard">
+    <title>Dashboard | AI Image Classifier</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- ═══════════ HEADER ═══════════ -->
+    <header class="header dashboard-header">
+        <div class="header-content">
+            <h1 class="app-title">Model Dashboard</h1>
+            <p class="app-subtitle">Interactive Training Performance Metrics</p>
+            <div class="tech-badges">
+                <a href="/" class="badge back-btn" style="text-decoration: none;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                    Back to Classifier
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════ MAIN CONTENT ═══════════ -->
+    <main class="main-content dashboard-main">
+
+        <!-- Summary Cards -->
+        <section class="summary-cards">
+            <div class="glass-card summary-card">
+                <h3>Test Accuracy</h3>
+                <p id="summary-test-acc" class="summary-value" style="color: var(--accent-cyan);">--%</p>
+            </div>
+            <div class="glass-card summary-card">
+                <h3>Test Loss</h3>
+                <p id="summary-test-loss" class="summary-value" style="color: var(--accent-pink);">--</p>
+            </div>
+            <div class="glass-card summary-card">
+                <h3>Total Epochs</h3>
+                <p id="summary-epochs" class="summary-value" style="color: var(--accent-purple);">--</p>
+            </div>
+        </section>
+
+        <!-- Charts Grid -->
+        <section class="charts-grid">
+            <div class="glass-card chart-card">
+                <h2 class="section-title">
+                    <span class="metric-dot metric-dot--cyan" style="background-color: var(--accent-cyan); width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px;"></span>
+                    Accuracy Over Epochs
+                </h2>
+                <div class="chart-container">
+                    <canvas id="accuracyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="glass-card chart-card">
+                <h2 class="section-title">
+                    <span class="metric-dot metric-dot--pink" style="background-color: var(--accent-pink); width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px;"></span>
+                    Loss Over Epochs
+                </h2>
+                <div class="chart-container">
+                    <canvas id="lossChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <p class="footer-built">Built with <span class="footer-highlight">TensorFlow</span>, <span class="footer-highlight">Flask</span> &amp; <span class="footer-highlight">Chart.js</span></p>
+        <p class="footer-copy">AI Image Classifier &copy; 2025</p>
+    </footer>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
