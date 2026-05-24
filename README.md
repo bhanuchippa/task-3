@@ -93,9 +93,9 @@ The model is trained in two phases to maximize performance:
 - **Top-3 Predictions with Confidence Scores** — See the model's certainty for each class
 - **Animated Confidence Bars** — Visual feedback with smooth progress bar animations
 - **Drag & Drop Image Upload** — Modern upload zone with file preview
-- **Training Metrics Visualization** — Accuracy and loss curves plotted after training
+- **Interactive Performance Dashboard** — A dedicated `/dashboard` route dynamically graphing live training accuracy and loss metrics using Chart.js
 - **Confusion Matrix** — Detailed per-class performance breakdown
-- **Responsive Dark-Themed UI** — Sleek interface that works on desktop and mobile
+- **Responsive Dark-Themed UI** — Sleek interface (Glassmorphism design) that works on desktop and mobile
 - **Cross-Platform Compatible** — Runs on Windows, macOS, and Linux
 
 ---
@@ -115,7 +115,8 @@ The model is trained in two phases to maximize performance:
 | **Seaborn** | Statistical visualization (confusion matrix heatmap) |
 | **Scikit-learn** | Model evaluation metrics and classification reports |
 | **Pillow** | Image file handling and format conversion |
-| **HTML / CSS / JS** | Frontend interface with responsive design |
+| **Chart.js** | Dynamic, interactive JavaScript charting for the dashboard |
+| **HTML / CSS / JS** | Frontend interface with premium Glassmorphism design |
 
 ---
 
